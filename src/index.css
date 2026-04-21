@@ -1,0 +1,120 @@
+:root {
+  --layout-max-width: 96rem;
+
+  --color-bg: #050c10;
+  --color-bg-alt: #0a1318;
+  --color-panel: linear-gradient(180deg, rgba(11, 20, 27, 0.92), rgba(7, 14, 19, 0.94));
+  --color-panel-strong: linear-gradient(180deg, rgba(14, 24, 31, 0.92), rgba(8, 14, 18, 0.96));
+  --color-line: rgba(112, 151, 168, 0.18);
+  --color-line-strong: rgba(112, 151, 168, 0.28);
+  --color-text: #edf7fb;
+  --color-text-soft: #bed0d8;
+  --color-text-muted: #7e96a2;
+  --color-accent: #6dd8ff;
+  --color-accent-2: #efc15d;
+  --color-roll: #80f8f5;
+  --color-rail: #ffe38e;
+  --color-collision: #ff7f74;
+
+  --shadow-panel: 0 1.8rem 3.5rem rgba(0, 0, 0, 0.36);
+  --shadow-glow: 0 0 1.6rem rgba(109, 216, 255, 0.18);
+
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-pill: 999px;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.875rem;
+  --space-4: 1.25rem;
+  --space-5: 1.75rem;
+  --space-6: 2.5rem;
+
+  --text-label: 0.72rem;
+  --text-caption: 0.74rem;
+
+  --motion-base: 180ms ease;
+
+  --font-body: 'Segoe UI Variable', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  --font-display: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  --font-mono: 'SFMono-Regular', 'Cascadia Code', 'Consolas', monospace;
+
+  color-scheme: dark;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-text);
+  background:
+    radial-gradient(circle at top, rgba(34, 100, 132, 0.22), transparent 30%),
+    radial-gradient(circle at 85% 10%, rgba(239, 193, 93, 0.1), transparent 18%),
+    linear-gradient(180deg, #071116 0%, #04090c 100%);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  background:
+    radial-gradient(circle at top, rgba(34, 100, 132, 0.22), transparent 30%),
+    radial-gradient(circle at 85% 10%, rgba(239, 193, 93, 0.1), transparent 18%),
+    linear-gradient(180deg, #071116 0%, #04090c 100%);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+input {
+  accent-color: var(--color-accent);
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  font-size: clamp(2.75rem, 4vw, 4.8rem);
+  line-height: 0.98;
+}
+
+h2 {
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+  line-height: 1.05;
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  font-family: var(--font-mono);
+}
+
+a {
+  color: inherit;
+}
